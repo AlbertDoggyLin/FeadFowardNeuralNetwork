@@ -15,7 +15,7 @@ The activation function contains relu, sigmoid, and elu
         virtualenv .
         source Scripts/activate
         pip install -r requirement.txt
-        python src/test.exe
+        python src/test.py
 
 - git bash command(mac or linux)
     ###
@@ -25,6 +25,6 @@ The activation function contains relu, sigmoid, and elu
         virtualenv .
         source Scripts/activate
         pip3 install -r requirement.txt
-        python src/test.exe
+        python src/test.py
 
 
