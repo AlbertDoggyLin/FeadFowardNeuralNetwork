@@ -1,6 +1,6 @@
-# Feadfoward Neural Network prepared for generic algorithm
+# Feadforward Neural Network prepared for generic algorithm
 ## introduction
-This repo is for feed forward that only provide dense layer of feed forward neural network (not even back propogation).
+This repo is for feadforward that only provide dense layer of feed forward neural network (not even back propogation).
 The activation function contains relu, sigmoid, and elu
 ## to run the code
 1. create virtualenv
