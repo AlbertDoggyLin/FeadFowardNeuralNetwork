@@ -9,7 +9,7 @@ The activation function contains relu, sigmoid, and elu
 
 - git bash command(windows)
     ###
-        git clone https://github.com/AlbertDoggyLin/FeadFowardNeuralNetwork
+        git clone https://github.com/AlbertDoggyLin/FeedforwardNeuralNetwork
         cd FeadFowardNeuralNetwork
         pip install virtualenv
         virtualenv .
@@ -19,7 +19,7 @@ The activation function contains relu, sigmoid, and elu
 
 - git bash command(mac or linux)
     ###
-        git clone https://github.com/AlbertDoggyLin/FeadFowardNeuralNetwork
+        git clone https://github.com/AlbertDoggyLin/FeedforwardNeuralNetwork
         cd FeadFowardNeuralNetwork
         pip3 install virtualenv
         virtualenv .
