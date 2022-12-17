@@ -53,12 +53,12 @@ class FFN:
     def setWeightAndBias(self, layerIdx:int, modifiedW:np.ndarray| None=None, modifiedB:np.ndarray | None = None):
         if modifiedW is not None:
             if self._layers[layerIdx]._W.shape==modifiedW.shape:
-                self._layers[layerIdx]._W = modifiedW
+                self._layers[layerIdx]._W = modifiedW.copy()
             else:
                 print(f'Wrong size for set weight, target w shape is {self._layers[layerIdx]._W.shape}, while yours is {modifiedW.shape}')
         if modifiedB is not None:
             if self._layers[layerIdx]._B.shape==modifiedB.shape:
-                self._layers[layerIdx]._B = modifiedB
+                self._layers[layerIdx]._B = modifiedB.copy()
             else:
                 print(f'Wrong size for set weight, target w shape is {self._layers[layerIdx]._B.shape}, while yours is {modifiedB.shape}')
 
