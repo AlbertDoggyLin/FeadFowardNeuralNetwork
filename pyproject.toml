@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [project]
 name = "DNN_AlbertLin"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Albert Lin", email="albertlin2468@gmail.com" },
 ]
