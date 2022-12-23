@@ -32,6 +32,5 @@ class Dense:
     def cal(self, input:np.ndarray):
         if self._W is None:
             raise Exception('W not set, please specify input size or indicate parent')
-        self._lastOutput = self._actf(self._W@input)-self._B
+        self._lastOutput = self._actf(self._W@input-self._B)
         return self._lastOutput
-
