@@ -1,6 +1,6 @@
-# Feed Foward Neural Network prepared for generic algorithm
+# Feadforward Neural Network prepared for genetic algorithm
 ## introduction
-This repo is for feed forward that only provide dense layer of feed forward neural network (not even back propogation).
+This repo is for feedforward that only provide dense layer of feed forward neural network (not even back propogation).
 The activation function contains relu, sigmoid, and elu
 ## to run the code
 1. create virtualenv
@@ -9,8 +9,8 @@ The activation function contains relu, sigmoid, and elu
 
 - git bash command(windows)
     ###
-        git clone https://github.com/AlbertDoggyLin/FeadFowardNeuralNetwork
-        cd FeadFowardNeuralNetwork
+        git clone https://github.com/AlbertDoggyLin/FeedforwardNeuralNetwork
+        cd FeedforwardNeuralNetwork
         pip install virtualenv
         virtualenv .
         source Scripts/activate
@@ -19,8 +19,8 @@ The activation function contains relu, sigmoid, and elu
 
 - git bash command(mac or linux)
     ###
-        git clone https://github.com/AlbertDoggyLin/FeadFowardNeuralNetwork
-        cd FeadFowardNeuralNetwork
+        git clone https://github.com/AlbertDoggyLin/FeedforwardNeuralNetwork
+        cd FeedforwardNeuralNetwork
         pip3 install virtualenv
         virtualenv .
         source Scripts/activate
