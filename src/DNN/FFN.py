@@ -18,12 +18,19 @@ class FFN:
         self._layers.append(layer)
 
     @property
-    def outputDim(self)->int:
-        return self._layers[-1]._units
+    def info(self)->dict[str, int]:
+        """
+        inputDim: input dimention
 
-    @property
-    def inputDim(self)->int:
-        return self._layers[0]._inputSize
+        outputDim: output dimention
+
+        layers Info: the amount of units for each layer by correspounded index
+        """
+        info:dict[str, int]={}
+        info['inputDim']=self._layers[0]._inputSize
+        info['outputDim']=self._layers[-1]._units
+        info['layersInfo']=[layer._units for layer in self._layers]
+        return info
     
     @property
     def lastOutputs(self)->list[np.ndarray]:

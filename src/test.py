@@ -7,8 +7,8 @@ if __name__ == "__main__":
 
     # model input and output
     print('model input and output')
-    input1D=np.random.random(model.inputDim)
-    input2D=np.random.random((3, model.inputDim))
+    input1D=np.random.random(model.info['inputDim'])
+    input2D=np.random.random((3, model.info['inputDim']))
     result1D = model.cal(input1D)
     result2D = model.cal(input2D)
     print(f'input1D shape: {input1D.shape}, output shape: {result1D.shape}')

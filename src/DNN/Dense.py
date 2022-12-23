@@ -25,7 +25,7 @@ class Dense:
     def setParent(self, parent:FFN):
         self._parent=parent
         if self._W is None:
-            self._inputSize=parent.outputDim
+            self._inputSize=parent.info['outputDim']
             self._W=(np.random.random((self._units, self._inputSize))-0.5)*2
             self._B=(np.random.random((self._units, 1))-0.5)*2
 
