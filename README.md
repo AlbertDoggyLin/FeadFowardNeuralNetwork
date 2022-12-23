@@ -4,7 +4,7 @@ This repo is for feedforward that only provide dense layer of feed forward neura
 The activation function contains relu, sigmoid, and elu
 
 ## install it as site-packages
-    pip install --index-url https://test.pypi.org/simple/ --no-deps DNN-AlbertDoggyLin
+    pip install -i https://test.pypi.org/simple/ DNN-AlbertLin==0.0.2
 
 ## to run the code
 1. create virtualenv
