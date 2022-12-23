@@ -4,7 +4,7 @@ setup(
     name='DNN',
     version='1.0.0',    
     description='A DNN package using numpy to implement which currently include FNN',
-    url='https://github.com/AlbertDoggyLin/FeedforwardNeuralNetwork/tree/main/Package',
+    url='https://github.com/AlbertDoggyLin/FeedforwardNeuralNetwork/tree/main/Package#egg=DNN',
     author='Albert Lin',
     author_email='albertlin2468@gmail.com',
     license='BSD 2-clause',
