@@ -1,4 +1,9 @@
-from DNN import FFN, createSimpleModel
+try:
+    from DNN import FFN, createSimpleModel
+except:
+    print('import from local repo')
+    from DNN import FFN, createSimpleModel
+
 
 if __name__ == "__main__":
     # create a model, detail in DNN/__init__.py

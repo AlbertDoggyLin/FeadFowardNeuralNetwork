@@ -1,4 +1,7 @@
 /Lib
 /Scripts
+/dist
+/build
+/src/DNN_*
 *.cfg
 __pycache__
