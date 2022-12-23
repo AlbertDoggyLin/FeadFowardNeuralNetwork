@@ -2,6 +2,10 @@
 ## introduction
 This repo is for feedforward that only provide dense layer of feed forward neural network (not even back propogation).
 The activation function contains relu, sigmoid, and elu
+
+## install it as site-packages
+    pip install --index-url https://test.pypi.org/simple/ --no-deps DNN-AlbertDoggyLin
+
 ## to run the code
 1. create virtualenv
 2. install package by requirement.txt
