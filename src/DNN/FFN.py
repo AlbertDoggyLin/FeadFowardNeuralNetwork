@@ -36,7 +36,7 @@ class FFN:
     def lastOutputs(self)->list[np.ndarray]:
         return [layer._lastOutput.flatten() for layer in self._layers]
 
-    def cal(self, x:np.ndarray):
+    def foward(self, x:np.ndarray):
         if needFlatten:=(x.ndim!=2):
             x=np.array([x.flatten()])
         nextInput=x.transpose()

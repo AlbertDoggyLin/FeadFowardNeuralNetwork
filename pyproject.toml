@@ -1,25 +1,42 @@
 [build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
+# Minimum requirements for the build system to execute.
+# See https://github.com/scipy/scipy/pull/12940 for the AIX issue.
+requires = [
+    "setuptools>=61.0.0",
+    "wheel",
+    "Cython>=0.29.32,<3",  # Note: sync with setup.py, environment.yml and asv.conf.json
+    "oldest-supported-numpy>=2022.8.16",
+    "versioneer[toml]"
+]
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "DNN_AlbertLin"
-version = "0.0.4"
+version = "1.0.1"
 authors = [
   { name="Albert Lin", email="albertlin2468@gmail.com" },
 ]
 description = "A small example package of DNN supporting feadfoward only FNN"
 readme = "README.md"
 requires-python = ">=3.7"
+
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Intended Audience :: Science/Research',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Cython',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Topic :: Scientific/Engineering'
 ]
 
-dependencies = [
-  'numpy',
-]
 
 [project.urls]
 "Homepage" = "https://github.com/AlbertDoggyLin/DNN"
